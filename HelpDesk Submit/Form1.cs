@@ -176,7 +176,7 @@ namespace HelpDesk_Submit
                 //string for reading message box
                 string allText = "";
 
-                //if-else statements that return proper assignments for each location. DEFAULT = CDI Helpdesk
+                //if-else statements that return proper assignments for each location. DEFAULT = Helpdesk
                 if (assignmentBox.Text == "City 1")
                 {
                     assign += "[Local Place 1]";
@@ -190,12 +190,12 @@ namespace HelpDesk_Submit
                 else if (assignmentBox.Text == "Remote")
                 {
                     assign += "Remote";
-                    //cc += "cc=CDI-ESITSupport@cdicorp.com";
+                    //cc += "";
                 }
                 else
                 {
                     assign += "Remote";
-                    //cc += "cc=CDI-ESITSupport@cdicorp.com";
+                    //cc += "";
                 }
                 
                 if(location != "Remote")
@@ -233,7 +233,7 @@ namespace HelpDesk_Submit
                             allText += messageBox.Lines[i] + "%0d%0A";
                         }
                         
-                        //allText += messageBox.Lines[i] + "%0d%0A";
+                        
                     }
                 }
 
@@ -375,7 +375,6 @@ namespace HelpDesk_Submit
                     configs[20],
                     configs[21]
                 };
-                //phoneBox.Text = "602-555-";
                 configBox.SelectedIndex = -1;
             }
             else if(assignmentBox.Text == "City 2" || assignmentBox.Text == "City 3")
@@ -401,14 +400,7 @@ namespace HelpDesk_Submit
                     configs[20],
                     configs[21]
                 };
-               /* if (assignmentBox.Text == "City 2")
-                {
-                    phoneBox.Text = "623-555-";//springdale
-                }
-                else
-                {
-                    phoneBox.Text = "480-555-";
-                }*/
+               
                 configBox.SelectedIndex = -1;
 
             }
@@ -421,7 +413,6 @@ namespace HelpDesk_Submit
                     configs[20],
                     configs[21]
                 };
-                //phoneBox.Text = "";
                 configBox.SelectedIndex = -1;
             }
         }
